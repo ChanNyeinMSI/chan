@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.testingfragment.activities.testingThird">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TextView
+          android:id="@+id/text_id"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:text="Hello myanmar"
+          android:textStyle="bold"/>
+      <TextView
+          android:id="@+id/txt_grt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/text_id"
+          android:text="Greeting"
+          android:layout_centerInParent="true"
+          android:textStyle="bold|italic"
+          android:layout_marginTop="@dimen/margin_medium_2"/>
+      <ImageView
+          android:id="@+id/my_greetinglogo"
+          android:layout_width="wrap_content"
+          android:layout_height="150dp"
+          android:layout_below="@+id/txt_grt"
+          android:layout_centerInParent="true"
+          android:src="@drawable/hello"/>
+      <android.support.design.button.MaterialButton
+          android:id="@+id/btn_greeting"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/my_greetinglogo"
+          android:layout_marginLeft="@dimen/padding_medium_2"
+          android:text="Greeting"
+          android:backgroundTint="@color/colorPrimary"/>
+
+
+
+  </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
